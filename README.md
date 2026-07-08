@@ -66,3 +66,4 @@ LinkedIn   https://www.linkedin.com/in/cristinaperez285/
 GitHub     https://github.com/kristinaperez/  
 Email      kristina.perez.28523@gmail.com
 Telegram   KristinaPerez9
+WhatsApp   +34 625-55-21-25
