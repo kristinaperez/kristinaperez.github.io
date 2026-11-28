@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ducter: ИИ-партнёр, который сам раздаёт работу агентам · Кристина Перез</title>
+<meta name="description" content="Разбор Ducter: что это, какую проблему закрывает и два сценария использования, для программиста и для креатора или соло-предпринимателя.">
+<meta property="og:title" content="Ducter: ИИ-партнёр, который сам раздаёт работу агентам">
+<meta property="og:description" content="Раньше вы сами были диспетчером своих агентов. С Ducter диспетчер — ИИ, а вы только принимаете решения.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://kristinaperes.es/ai/ducter/">
+<link rel="canonical" href="https://kristinaperes.es/ai/ducter/">
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; font: 1.0625rem/1.65 system-ui, sans-serif; color: #0F2B23; background: #F4F8F6; }
+header, main, footer { width: min(100% - 2rem, 48rem); margin-inline: auto; }
+header, footer { padding-block: 1.25rem; }
+header { display: flex; gap: 1rem; flex-wrap: wrap; }
+section { padding-block: clamp(2rem, 6vw, 3.5rem); border-top: 1px solid #c9d8d1; }
+h1, h2 { margin: 0 0 1rem; line-height: 1.12; text-wrap: balance; }
+h1 { font-size: clamp(2.2rem, 7vw, 4rem); }
+h2 { font-size: clamp(1.5rem, 4.5vw, 2.3rem); }
+p, li { max-width: 68ch; }
+ul { padding-left: 1.2rem; }
+li + li { margin-top: .5rem; }
+a { color: #c2410c; text-underline-offset: .16em; overflow-wrap: anywhere; }
+a:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
+.meta { font-size: .9rem; opacity: .75; }
+.cta { display: inline-block; margin-top: .5rem; padding: .6rem 1rem; border-radius: .4rem; background: #0F2B23; color: #F4F8F6; text-decoration: none; font-weight: 600; }
+.cta:hover { background: #FF5A1F; color: #0F2B23; }
+.summary { padding: 1rem 1.25rem; border-left: 4px solid #FF5A1F; background: #fff; }
+footer { border-top: 1px solid #c9d8d1; }
+</style>
+</head>
+<body>
+<header><a href="/">Кристина Перез</a><a href="/ai/">ИИ</a></header>
+<main>
+<section id="start">
+<p class="meta">28 ноября 2026 · разбор GitHub-репозитория</p>
+<h1>Ducter: ИИ-партнёр, который сам раздаёт работу агентам</h1>
+<p>Ducter — это ваш личный ИИ-«партнёр». Вы говорите с ним в одном чате, а он раздаёт работу агентам, за которые вы уже платите (Claude Code, Codex, Cursor и другие). Потом он возвращает результат и показывает, как этот результат проверили. Работает на вашем Mac или сервере, бесплатный, с открытым кодом.</p>
+<a class="cta" href="https://github.com/wey-gu/ducter">Ducter на GitHub ↗</a>
+</section>
+
+<section id="problem">
+<h2>Какую дыру закрывает</h2>
+<p>У тех, кто активно работает с агентами, обычно десять вкладок терминала, и непонятно, какая из них ждёт ответа. Закрыл ноутбук, и агент встал. В каждой новой сессии проект приходится объяснять заново. А на «готово» часто нечем подтвердить, что всё правда работает.</p>
+</section>
+
+<section id="dev">
+<h2>Сценарий 1: веб-кодер или программист</h2>
+<ul>
+<li>Можно скинуть сразу несколько задач («почини тест, обнови зависимости, сделай форму»), и каждая уйдёт отдельному агенту в свою ветку.</li>
+<li>Пока агенты работают, вас не дёргают. Приходит только то, где нужно ваше решение, и сразу с готовым вариантом ответа: нажали <strong>Go</strong>, можно прямо с телефона.</li>
+<li>Отчёт «How I know» показывает, какие тесты прошли и что изменилось. В main ничего не попадёт без вашего «Merge».</li>
+<li>Если поставить на сервер, работа продолжается, пока Mac спит.</li>
+<li>Второй подписки нет: используются ваши текущие планы Claude или Codex.</li>
+</ul>
+</section>
+
+<section id="creator">
+<h2>Сценарий 2: креатор, вайб-кодер, соло-предприниматель</h2>
+<ul>
+<li>Не нужно уметь жонглировать терминалами: вы просто пишете партнёру обычным языком, хоть в Telegram или iMessage.</li>
+<li>Он помнит ваш проект и ваш контекст, так что не надо каждый раз объяснять всё с нуля.</li>
+<li>Кроме кода, он умеет разобрать почту и календарь и выдать утреннюю сводку только с важным. Ещё он может пройти в браузере до оформления заказа или позвонить (только после вашего «Call»), а также собрать маленькие приложения вроде трекера привычек.</li>
+<li>Для безопасности: всё лежит у вас, аккаунта в облаке нет, а платежи и отправки идут только после вашего подтверждения.</li>
+</ul>
+</section>
+
+<section id="summary">
+<h2>Итог: чем лучше того, что было</h2>
+<p class="summary">Раньше вы сами были диспетчером своих агентов. С Ducter диспетчер — ИИ, а вы только принимаете решения.</p>
+<p><strong>Минусы:</strong> это ранняя версия, работает только на Mac с M1 и новее и на Linux, а приложение для iPhone пока в бете.</p>
+<p>Код, установка и документация: <a href="https://github.com/wey-gu/ducter">github.com/wey-gu/ducter</a></p>
+</section>
+</main>
+<footer><a href="/ai/">Все материалы про ИИ</a> · <a href="#start">К началу</a></footer>
+</body>
+</html>
